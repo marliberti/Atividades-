@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <script>
+         /*Faça um programa que seja capaz de calcular de forma correta o IMC de um número indefinido de pessoas.  
+        Ou seja, o usuário decide quando para de calcular os IMCs. Para cada calculo deve ser informado a altura(m)
+        da pessoa e o seu peso(kg).*/
+
+    let altura
+    let peso
+    let IMC
+
+  do{
+  altura=parseFloat(prompt("Informe a sua altura: ", " "));
+  peso=parseFloat(prompt("Informe o seu peso (kg): ", " "));
+  IMC=peso/(altura*altura);
+
+    
+    if(IMC< 18.4){
+      alert("O seu IMC é de: " + IMC.toFixed(2)+ " Portanto você está classificado no índice Magreza grau I");
+      }
+    if(IMC > 18.5 && IMC <24.9){
+      alert("O seu IMC é de: " + IMC.toFixed(2)+ " Portanto você está classificado no índice Adequado");
+      }
+    if(IMC > 25.0 && IMC < 29.9){
+      alert("O seu IMC é de: " + IMC.toFixed(2)+ " Portanto você está classificado no índice Pré-Obeso");
+      }
+    if(IMC > 30 && IMC < 34.9){
+      alert("O seu IMC é de: " + IMC.toFixed(2)+ " Portanto você está classificado no índice Obesidade grau I");
+      }
+
+  }while(confirm("Deseja continuar?"));
+        
+    
+    
+    </script>
+    </script>
+</body>
+</html>
